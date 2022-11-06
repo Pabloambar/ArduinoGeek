@@ -1,0 +1,461 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee+Inline&family=Orbitron:wght@600&family=Press+Start+2P&family=Syncopate&family=Wallpoet&display=swap');
+
+:root{
+  --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
+  --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
+  --chocoLight:  rgb(168, 27, 27);
+  --chocoIntermedio: rgb(119, 33, 17);
+  --choscuro: rgb(49, 9, 9);
+  --colCard: rgba(189, 67, 67, 0.473), rgba(209, 23, 23, 0.452);
+  --headFoot: rgba(228, 178, 105, 0.664);
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+  --primary-bg: #131415;
+  --secondary-bg: #282828;
+  --semi-black: #17191b;
+  --semi-gray: #6b7280;
+  --light-gray: #9ca3af;
+  --dark-white: #e5e7eb;
+  --semi-white: #f9fafb;
+  --text-white: #f3f4f6;
+  --white: #fff;
+  --rose: #e11d48;
+  --light-red: #ff005c;
+  --purple: #8c54fb;
+  --arduino: #008184;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+  
+  body{
+    max-width: 1600px;
+    background-color: white;
+  }
+
+header{
+  display: flex;
+  background-color: var(--arduino);
+  width: 100%;
+  height: 68px;
+  position: sticky;
+  border-bottom: solid 2px black;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px 0px 30px;
+  top: 0px;
+  z-index: 2;
+}
+
+.navbar{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+
+.navbar-list{
+  display: flex;
+  width: 100%;
+  font-family: 'Allerta Stencil';
+  font-size: 20px;
+  flex-direction: row;
+  gap: 50px;
+}
+
+.navbar-list a{
+  color: black;
+}
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+}
+.dropdown-content {
+  font-size: 15px;
+  display: none;
+  position: absolute;
+  width: 150%;
+  overflow: auto;
+  background-color: var(--arduino);
+  border-radius: 5px;
+}
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+.dropdown-content a {
+  display: block;
+  color: #000000;
+  padding: 5px;
+  text-decoration: none;
+}
+.dropdown-content a:hover {
+  color: #FFFFFF;
+  background-color: #00A4BD;
+}
+
+.logo{
+  display: flex;
+  width: 100px;
+  height: 90px;
+}
+
+.iconoMenu{
+  display: none;
+  width: 40px;
+  height: 40px;
+}
+
+.iconoCarrito{
+  width: 40px;
+  height: 40px;  
+}
+
+.usuario{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.usuario p {
+  color: black;
+  font-size: 15px;
+  font-family: 'Allerta Stencil';
+}
+
+.descripcion{
+  display: flex;
+  justify-content: center;
+  border-bottom: solid 1px green;
+  padding-bottom: 50px;
+}
+
+.descripcion-intro{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Allerta Stencil';
+  gap: 20px;
+}
+
+.titulo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 25px;
+}
+
+.titulo h1{
+  font-size: 50px;
+  color: var(--rose);
+}
+
+.logoh1{
+  width: 100px;
+  height: 100px;
+}
+
+.descripcion-intro p{
+  color: blue;
+  font-size: 25px;
+}
+
+
+main{
+  margin-top: 50px;
+}
+.container {
+  margin-top: 360px;
+  padding: 2rem;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 300px 300px 300px 300px;
+  grid-template-rows: 300px 300px 300px 300px;
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  height: 100vh; 
+}
+
+.item {
+  border-radius: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.item:nth-child(1){
+  grid-column: 1/2;
+  grid-row: 1/2;
+}
+
+.item:nth-child(2){
+  grid-column: 2/3;
+  grid-row: 1/2;
+}
+
+.item:nth-child(3){
+  grid-column: 3/4;
+  grid-row: 1/2;
+}
+
+.item:nth-child(4){
+  grid-column: 4/5;
+  grid-row: 1/2;
+}
+
+.item:nth-child(5){
+  grid-column: 1/2;
+  grid-row: 2/3;
+}
+
+.item:nth-child(6){
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.item:nth-child(7){
+  grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.item:nth-child(8){
+  grid-column: 4/5;
+  grid-row: 2/3;
+}
+
+.item:nth-child(9){
+  grid-column: 1/2;
+  grid-row: 3/4;
+}
+
+.item:nth-child(10){
+  grid-column: 2/3;
+  grid-row: 3/4;
+}
+
+.item:nth-child(11){
+  grid-column: 3/4;
+  grid-row: 3/4;
+}
+
+.item:nth-child(12){
+  grid-column: 4/5;
+  grid-row: 3/4;
+}
+
+.item:nth-child(13){
+  grid-column: 1/2;
+  grid-row: 4/5;
+}
+
+.item:nth-child(14){
+  grid-column: 2/3;
+  grid-row: 4/5;
+}
+
+.item:nth-child(15){
+  grid-column: 3/4;
+  grid-row: 4/5;
+}
+
+.item:nth-child(16){
+  grid-column: 4/5;
+  grid-row: 4/5;
+}
+
+.producto{
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.producto img{
+  width: 200px;
+  height: 200px;
+  border-radius: 1rem;
+}
+
+.producto-descripcion{
+  align-items: center;
+  font-family: 'Allerta Stencil';  
+}
+
+.producto-bottom{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.producto-bottom a{
+  background-color:rgb(168, 27, 27);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Allerta Stencil';
+  border-radius: 5px;
+  width: 160px;
+  height: 30px;
+  text-decoration: none;
+}
+
+.producto-precio{
+  font-family: 'Allerta Stencil';
+  font-weight: 700;
+  font-size: 20px;
+  color: #f71414;
+}
+
+.cargar{
+  margin-top: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Allerta Stencil';
+  font-size: 20px;
+  color: #e11d48;
+
+}
+
+.cargar a {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0ff00;
+  border: solid 2px red;
+  border-radius:5px;
+}
+
+.acerca{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center ;
+  align-items:center ;
+  font-family: 'Allerta Stencil';
+}
+
+.acerca-argum{
+  background-color: blue;
+  width: 1000px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 25px;
+}
+.acerca-argum h2{
+  color: white;
+  font-size: 40px;
+}
+.acerca-argum span{
+  background: linear-gradient(to top, white, #301833);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text
+}
+.acerca-argum p{
+  color: white;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+}
+
+footer{
+  width: 100%;
+  height: 350px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  background-color: var(--arduino);
+  justify-content: space-between;
+  font-family: 'Allerta Stencil';
+  margin-bottom: 50px;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+#footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+
+.contacto{
+  width: 340px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+.contacto ul{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+.extras{
+  width: 340px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+.extras ul{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.ubicacion{
+  display: flex;
+  align-items: center;
+  width: 370px;
+  height: 370px;
+}
+
+.mapa{
+  width: 340px;
+  height: 310px;
+  border-radius: 15px;
+  border: solid 2px black;
+}
+
+.logoContacto{
+  width: 30px;
+  height: 30px;
+}
+footer li {
+  display: flex;
+  align-items: center;
+}
