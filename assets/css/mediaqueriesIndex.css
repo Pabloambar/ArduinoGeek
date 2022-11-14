@@ -1,0 +1,519 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee+Inline&family=Orbitron:wght@600&family=Press+Start+2P&family=Syncopate&family=Wallpoet&display=swap');
+
+:root{
+  --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
+  --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
+  --chocoLight:  rgb(168, 27, 27);
+  --chocoIntermedio: rgb(119, 33, 17);
+  --choscuro: rgb(49, 9, 9);
+  --colCard: rgba(189, 67, 67, 0.473), rgba(209, 23, 23, 0.452);
+  --headFoot: rgba(228, 178, 105, 0.664);
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+  --primary-bg: #131415;
+  --secondary-bg: #282828;
+  --semi-black: #17191b;
+  --semi-gray: #6b7280;
+  --light-gray: #9ca3af;
+  --dark-white: #e5e7eb;
+  --semi-white: #f9fafb;
+  --text-white: #f3f4f6;
+  --white: #fff;
+  --rose: #e11d48;
+  --light-red: #ff005c;
+  --purple: #8c54fb;
+  --arduino: #008184;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+@media (max-width: 1200px) {
+
+  
+  body{
+    width: 100%;
+  }
+
+header{
+  width: 100%;
+    height: 65px;
+}
+
+.navbar{
+ 
+  gap: 50px;
+}
+
+
+.navbar-list{
+ 
+  gap: 40px;
+}
+
+main{
+  width: 100%;
+}
+
+.container{
+  margin-top: 250px;
+  padding: 1rem;
+  display: grid;
+  place-content: center;
+  grid-template-columns: 250px 250px 250px 250px;
+  grid-template-rows: 250px 250px 250px 250px;
+  grid-auto-rows: 1fr;
+  gap: 10px;
+  height: 100vh; 
+}
+
+.descripcion{
+  border: none;
+}
+
+.item h4{
+    font-size: 13px;
+}
+
+.producto img{
+  width: 100px;
+  height: 100px;
+}
+
+
+.producto-bottom{
+  gap: 5px;
+}
+
+.producto-bottom a{
+ 
+  width: 130px;
+  height: 20px;
+  font-size: 10px;
+}
+
+.producto-precio{
+  font-size: 15px;
+}
+
+.cargar{
+  margin-top: 300px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-family: 'Allerta Stencil';
+  font-size: 20px;
+  color: #e11d48;
+
+}
+
+.cargar a {
+  display: flex;
+  width: 300px;
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+  background-color: #d0ff00;
+  border: solid 2px red;
+  border-radius:5px;
+}
+
+.acerca{
+  margin-top: 100px;
+  display: flex;
+  justify-content: center ;
+  align-items:center ;
+  font-family: 'Allerta Stencil';
+}
+
+.acerca-argum{
+  background-color: blue;
+  width: 1000px;
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 15px;
+  gap: 25px;
+}
+.acerca-argum h2{
+  color: white;
+  font-size: 40px;
+}
+.acerca-argum span{
+  background: linear-gradient(to top, white, #301833);
+  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text
+}
+.acerca-argum p{
+  color: white;
+  width: 80%;
+  font-size: 20px;
+  text-align: center;
+}
+
+/* footer{
+  width: 100%;
+  height: 350px;
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  background-color: var(--arduino);
+  justify-content: space-between;
+  font-family: 'Allerta Stencil';
+  margin-bottom: 50px;
+  border-top: solid 2px black;
+  border-bottom: solid 2px black;
+}
+
+
+.contacto{
+  width: 370px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+.contacto ul{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+.extras{
+  width: 320px;
+  height: 310px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 1px black;
+  border-radius: 15px;
+}
+
+.extras ul{
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+  font-size: 20px;
+}
+
+.ubicacion{
+  display: flex;
+  align-items: center;
+  width: 320px;
+  height: 370px;
+}
+
+.mapa{
+  width: 320px;
+  height: 310px;
+  border-radius: 15px;
+  border: solid 2px black;
+}
+
+.logoContacto{
+  width: 30px;
+  height: 30px;
+}
+footer li {
+  display: flex;
+  align-items: center;
+} */
+
+}
+
+/* ------------------------------------------------------------------------------------------------------------------------------------------- */
+
+@media (max-width: 1000px) {
+  .navbar-list{
+    display: none;
+  }
+
+  .iconoMenu{
+    display: block;
+  }
+
+  .dropdown1 {
+    display: inline-block;
+    position: relative;
+  }
+  .dropdown-content1 {
+    font-family: 'Allerta Stencil';
+    margin-top: 10px;
+    font-size: 17px;
+    display: none;
+    position: absolute;
+    width: 270%;
+    overflow: auto;
+    background-color: var(--arduino);
+    border-radius: 5px;
+  }
+  .dropdown1:hover .dropdown-content1 {
+    display: block;
+  }
+  .dropdown-content1 a {
+    display: block;
+    color: #000000;
+    padding: 10px;
+    text-decoration: none;
+  }
+  .dropdown-content1 a:hover {
+    color: #FFFFFF;
+    background-color: #00A4BD;
+  }
+
+  .container{
+    margin-top: 250px;
+    padding: 1rem;
+    display: grid;
+    place-content: center;
+    grid-template-columns: 200px 200px 200px 200px;
+    grid-template-rows: 200px 200px 200px 200px;
+    grid-auto-rows: 1fr;
+    gap: 10px;
+    height: 100vh; 
+  }
+  
+  .descripcion{
+    border: none;
+  }
+  
+  .item h4{
+      font-size: 13px;
+  }
+  
+  .producto img{
+    width: 100px;
+    height: 100px;
+  }
+  
+  
+  .producto-bottom{
+    gap: 5px;
+  }
+  
+  .producto-bottom a{
+   
+    width: 130px;
+    height: 20px;
+    font-size: 10px;
+  }
+  
+  .producto-precio{
+    font-size: 15px;
+  }
+  
+  .cargar{
+    margin-top: 150px;
+  }
+  
+  .cargar a {
+  
+  }
+  
+  .acerca{
+    margin-top: 50px;
+  }
+  
+  .acerca-argum{
+    background-color: blue;
+    width: 1000px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 15px;
+    gap: 25px;
+  }
+  .acerca-argum h2{
+    color: white;
+    font-size: 40px;
+  }
+  .acerca-argum span{
+    background: linear-gradient(to top, white, #301833);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text
+  }
+  .acerca-argum p{
+    color: white;
+    width: 80%;
+    font-size: 20px;
+    text-align: center;
+  }
+  
+
+  footer{
+    background-color:lightblue;
+    display: flex;
+   flex-direction: column;
+   border: none;
+   gap: 20px;
+   height: 100%;
+   padding-bottom: 15px;
+   border-radius: 15px;
+  }
+ 
+  .contacto{
+    width: 400px;
+    height: 320px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: #008184;
+  }
+  
+  .contacto ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 15px;
+  }
+  .extras{
+    width: 400px;
+    height: 310px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px black;
+    border-radius: 15px;
+    background-color: #008184;
+  }
+  
+  .extras ul{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    font-size: 15px;
+  }
+  
+  .ubicacion{
+    display: flex;
+    align-items: center;
+    width: 400px;
+    height: 310px;
+  }
+  
+  .mapa{
+    width: 400px;
+    height: 310px;
+    border-radius: 15px;
+    border: solid 2px black;
+  }
+
+}
+
+@media (max-width:830px){
+  .container {
+    margin-top: 300px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item:nth-child(even),
+.item:nth-child(odd) {
+    grid-column: auto;
+    grid-row: auto;
+}
+.cargar{
+  margin-top: 370px;
+}
+}
+
+@media (max-width:700px){
+  .titulo h1{
+    font-size: 35px;
+  }
+  .descripcion-intro p {
+    font-size: 20px;
+  }
+  .container {
+    margin-top: 300px;
+    grid-template-columns: repeat(3, 1fr);
+}
+.item:nth-child(even),
+.item:nth-child(odd) {
+    grid-column: auto;
+    grid-row: auto;
+}
+.cargar{
+  margin-top: 370px;
+}
+
+.acerca-argum{
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+}
+
+@media (max-width:580px){
+  .container {
+    margin-top: 450px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.item:nth-child(even),
+.item:nth-child(odd) {
+    grid-column: auto;
+    grid-row: auto;
+}
+.cargar{
+  margin-top: 500px;
+}
+
+}
+
+@media (max-width:450px){
+
+  .container {
+    margin-top: 450px;
+    grid-template-columns: repeat(2, 1fr);
+}
+.item:nth-child(even),
+.item:nth-child(odd) {
+    grid-column: auto;
+    grid-row: auto;
+}
+}
+
+
+
+
+/* @media screen and (min-width: 250px) and (max-width: 480px) {
+
+  .container {
+      grid-template-columns: repeat(1, 1fr);
+  }
+
+  .item:nth-child(even),
+  .item:nth-child(odd) {
+      grid-column: auto;
+      grid-row: auto;
+  }
+
+  body {
+      padding: unset;
+  }
+
+}  */

@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee+Inline&family=Orbitron:wght@600&family=Press+Start+2P&family=Syncopate&family=Wallpoet&display=swap');
+
+:root{
+  --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
+  --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
+  --chocoLight:  rgb(168, 27, 27);
+  --chocoIntermedio: rgb(119, 33, 17);
+  --choscuro: rgb(49, 9, 9);
+  --colCard: rgba(189, 67, 67, 0.473), rgba(209, 23, 23, 0.452);
+  --headFoot: rgba(228, 178, 105, 0.664);
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+  --primary-bg: #131415;
+  --secondary-bg: #282828;
+  --semi-black: #17191b;
+  --semi-gray: #6b7280;
+  --light-gray: #9ca3af;
+  --dark-white: #e5e7eb;
+  --semi-white: #f9fafb;
+  --text-white: #f3f4f6;
+  --white: #fff;
+  --rose: #e11d48;
+  --light-red: #ff005c;
+  --purple: #8c54fb;
+  --arduino: #008184;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+  }
+
+  body{
+   max-width: 1600px;
+   background-color: var(--arduino);
+  }
+
+  main{
+    margin-top: 80px;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    justify-content: center;
+  }
+
+  .conteiner{
+    background-image: url(../imagenes/fondos/circuito\ \(3\).png);
+    background-size: cover;
+    background-color: blue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width:  400px;
+    height: 500px;
+    border-radius: 15px;
+    border: solid 2px black;
+    font-family: 'Allerta Stencil';
+
+  }
+
+  .formRegistro {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .formRegistro h1 {
+    font-size: 30px;
+    margin-bottom: 30px;
+    color: white;
+  }
+  
+  .input {
+    padding: 15px 35px 15px 15px;
+    border-radius: 10px;
+    background-color: black;
+    color: white;
+    outline: none;
+    border: none;
+  }
+  
+  .botonIngresar {
+    margin-top: 80px;
+    font-size: 1.5rem;
+    background: white;
+    color: red;
+    padding: 15px;
+    border-radius: 1rem;
+    border: solid 1px black;
+    cursor: pointer;
+  }
+
+  .registro{
+    display: flex;
+    align-items: center;;
+    justify-content: center;
+  }
+  
+  .registro a {
+    text-decoration:underline;
+    color: white;
+    font-family: 'Allerta Stencil';
+    margin-top: 10px;
+    display: flex;
+    font-size: 17px;
+  }

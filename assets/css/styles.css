@@ -85,6 +85,10 @@ header{
   color: black;
 }
 
+.dropdown1{
+  display: none;
+}
+
 .dropdown {
   display: inline-block;
   position: relative;
@@ -146,6 +150,7 @@ header{
   justify-content: center;
   border-bottom: solid 1px green;
   padding-bottom: 50px;
+ 
 }
 
 .descripcion-intro{
@@ -405,7 +410,7 @@ footer{
 }
 
 .contacto{
-  width: 340px;
+  width: 370px;
   height: 310px;
   display: flex;
   align-items: center;

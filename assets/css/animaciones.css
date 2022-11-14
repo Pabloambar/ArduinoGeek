@@ -1,4 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allerta+Stencil&family=Bungee+Inline&family=Orbitron:wght@600&family=Press+Start+2P&family=Syncopate&family=Wallpoet&display=swap');
 
+:root{
+  --gradiente: rgb(71, 50, 50), rgba(209, 151, 151, 0.781); 
+  --chocoGrad: rgba(105, 16, 16, 0.473), rgba(209, 151, 151, 0.452); 
+  --chocoLight:  rgb(168, 27, 27);
+  --chocoIntermedio: rgb(119, 33, 17);
+  --choscuro: rgb(49, 9, 9);
+  --colCard: rgba(189, 67, 67, 0.473), rgba(209, 23, 23, 0.452);
+  --headFoot: rgba(228, 178, 105, 0.664);
+  --background: #02050e;
+  --primary: #1e50ff;
+  --secondary: #272d37;
+  --btn-bg: #050d26;
+  --bg-azul-10: #e9eeff;
+  --bg-white: #fff;
+  --bg-electric: #f0fbff;
+  --nav-bg: #0f1525;
+  --text-gray: #adb9c7;
+  --text-white: #f3f4f6;
+  --fire: #ff6d00;
+  --electric: #64d3ff;
+  --primary-bg: #131415;
+  --secondary-bg: #282828;
+  --semi-black: #17191b;
+  --semi-gray: #6b7280;
+  --light-gray: #9ca3af;
+  --dark-white: #e5e7eb;
+  --semi-white: #f9fafb;
+  --text-white: #f3f4f6;
+  --white: #fff;
+  --rose: #e11d48;
+  --light-red: #ff005c;
+  --purple: #8c54fb;
+  --arduino: #008184;
+}
 .navbar-list li {
     position: relative;
     padding: 0;
@@ -76,6 +112,18 @@
     animation-delay: 0.2s;
 }
 
+/* @keyframes cambiar{
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 0 50%;}
+}
+
+.descripcion{
+    background: linear-gradient(45deg, white , white, var(--arduino));
+    background-size: 400% 400%;
+    animation: cambiar 3s ease-in-out infinite;
+} */
+
 .tituloh1 h1{
     opacity: 0;
     animation: fade 1s ease-in forwards, slide-left 1.3s ease-in-out;
@@ -100,4 +148,10 @@
     font-weight: bold;
     transition: all 0.2s ease-in;
     cursor: pointer;
+}
+
+.cargar:hover{
+    transition: all 0.3s linear;
+    transform: scale(1.2);
+    /* cursor: pointer; */
 }
