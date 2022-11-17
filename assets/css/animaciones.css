@@ -72,6 +72,24 @@
     transform: scale(1.1);
 }
 
+@media handheld, only screen and (max-width: 800px) {
+    
+    .item:hover{
+        transition: all 0.3s linear;
+        transform: none;
+        cursor: pointer;
+    }
+    
+    .producto-bottom a:hover{
+        color: chartreuse;
+        /* width: 170px;
+        height: 40px; */
+        transition: all 0.3s linear;
+        transform: none;
+    }
+
+    }
+
   .usuario a :hover{
     color: red;   
 }
