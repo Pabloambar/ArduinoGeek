@@ -290,7 +290,7 @@ main{
   }
   
 
-  footer{
+  .info-contacto{
     background-color:lightblue;
     display: flex;
    flex-direction: column;

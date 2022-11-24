@@ -92,6 +92,7 @@
 
   .usuario a :hover{
     color: red;   
+    transition: all 0.5s;
 }
 
 @keyframes fade {
@@ -130,17 +131,6 @@
     animation-delay: 0.2s;
 }
 
-/* @keyframes cambiar{
-    0%{background-position: 0 50%;}
-    50%{background-position: 100% 50%;}
-    100%{background-position: 0 50%;}
-}
-
-.descripcion{
-    background: linear-gradient(45deg, white , white, var(--arduino));
-    background-size: 400% 400%;
-    animation: cambiar 3s ease-in-out infinite;
-} */
 
 .tituloh1 h1{
     opacity: 0;
@@ -172,4 +162,9 @@
     transition: all 0.3s linear;
     transform: scale(1.2);
     /* cursor: pointer; */
+}
+
+.footer-info p:hover{
+    color: red;
+    transition: all 1s;
 }
