@@ -35,7 +35,50 @@
                 <a href="./index.html">Home</a><a href="#productos">Productos</a><a href="index.html">Tutoriales</a><a href="#acerca">Acerca de</a><a href="#info-contacto">Contacto</a>
             </div>
         </div>
-        <img src="/assets/imagenes/iconos/carritoCompras1.png" alt="icono" class="iconoCarrito">
+        <!-- <img src="/assets/imagenes/iconos/carritoCompras1.png" alt="icono" class="iconoCarrito"> -->
+        <label for="cart-toggle" class="cart-label">
+            <img src="./assets/imagenes/iconos/carritoCompras1.png" alt="Carrito de Compras" class="carrito" />
+          </label>
+          <input type="checkbox" id="cart-toggle">
+          <!-- carrito -->
+          <div class="carritoCont">
+            <h2>Tus Productos</h2>
+        
+            <div class="cart-item">
+              <img src="./assets/imagenes/productos/arduboard-starter-kit-plus.jpg" alt="producto">
+              <div class="item-info">
+                <h3 class="item-title">ARDUBOARD STARTER KIT-PLUS</h3>
+                <span class="item-price">$ 4300</span>
+              </div>
+              <div class="item-handler">
+                <span class="quantity-handler down"> - </span>
+                <span class="item-quantity"> 1 </span>
+                <span class="quantity-handler up"> + </span>
+              </div>
+            </div>
+        
+            <div class="cart-item">
+              <img src="./assets/imagenes/productos/arduino-uno-rev3-original.jpg" alt="producto">
+              <div class="item-info">
+                <h3 class="item-title">ARDUINO UNO R3</h3>
+                <span class="item-price">$ 4300</span>
+              </div>
+              <div class="item-handler">
+                <span class="quantity-handler down"> - </span>
+                <span class="item-quantity"> 1 </span>
+                <span class="quantity-handler up"> + </span>
+              </div>
+            </div>
+        
+        
+            <span class="divider"></span>
+            <div class="cart-total">
+              <p>Total:</p>
+              <span>$4300</span>
+            </div>
+            <a class="btn-comprar" href="index.html">Comprar</a>
+        
+          </div>
         <div class="usuario"><img src="./assets/imagenes/iconos/usuario (3).png" alt="imagenUsuario" class="iconoCarrito"><a href="./pages/login.html"><p>Ingresar</p></a></div>       
     </nav>
    </header>

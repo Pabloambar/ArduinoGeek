@@ -133,6 +133,153 @@ header{
   height: 40px;  
 }
 
+#cart-toggle,
+          #menu-toggle,
+          .menu-label {
+            display: none;
+          }
+          
+          #cart-toggle:checked + .carritoCont {
+            display: flex;
+          }
+
+.carrito {
+  height: 36px;
+  cursor: pointer;
+}
+
+.carritoCont {
+  margin-top: 2px;
+  position: absolute;
+  top: 65px; 
+  right: 0;
+  padding: 50px 30px;
+  background-color:var(--arduino);
+  border-radius: 20px;
+  border: solid 2px black;;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  height: calc(100vh - 75px);
+  overflow-y: scroll;
+  z-index: 2;
+  display: none;
+  font-family: 'Allerta Stencil';
+}
+
+.carritoCont::-webkit-scrollbar {
+  display: none;
+}
+
+.carritoCont h2 {
+  color: var(--text-white);
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.cart-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  border: 1px solid var(--electric);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.cart-item img {
+  height: 65px;
+  width: 65px;
+}
+
+.item-title {
+  color: var(--text-white);
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.item-bid {
+  color: var(--text-gray);
+  font-size: 12px;
+  font-weight: 300;
+}
+
+.item-price {
+  background-color: #f3f4f6;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.item-handler {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.quantity-handler {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2px 8px;
+  border-radius: 5px;
+  color: var(--text-white);
+  font-weight: 400;
+}
+
+.up {
+  border: 1px solid var(--electric);
+}
+
+.down {
+  background-color: var(--secondary);
+  border: 1px solid var(--electric);
+}
+
+.item-quantity {
+  color: var(--text-gray);
+}
+
+.divider {
+  margin-top: 20px;
+  border: 0.5px solid var(--electric);
+}
+
+.cart-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.cart-total p {
+  color: var(--electric);
+  font-weight: 700;
+}
+
+.cart-total span {
+  background-color: #f3f4f6 ;
+  background-clip: text;
+  color: transparent;
+  -webkit-background-clip: text;
+  font-weight: 1000;
+  font-size: 20px;
+}
+
+.btn-comprar{
+  color: white;
+  background-color: blue;;
+  width: 120px;
+  padding: 8px 0px;
+  border-radius: 10px;
+  border: 2px solid black;
+  font-size: 20px;
+  text-align: center; 
+}
+
 .usuario{
   display: flex;
   flex-direction: column;
