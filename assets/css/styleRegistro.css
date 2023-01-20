@@ -97,7 +97,7 @@
   }
   
   .botonIngresar {
-    margin-top: 80px;
+    margin-top: 40px;
     font-size: 1.5rem;
     background: white;
     color: red;
@@ -105,6 +105,17 @@
     border-radius: 1rem;
     border: solid 1px black;
     cursor: pointer;
+  }
+
+  .volver{
+    background-color: blue;
+    /* margin-top: 50px; */
+    font-size: 20px;
+    font-weight: bold;
+    color:white;
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
   }
 
   .registro{

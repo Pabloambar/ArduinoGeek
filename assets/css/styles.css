@@ -45,8 +45,12 @@
     list-style-type: none;
   }
   
+html{
+  scroll-behavior: smooth;
+}
+
   body{
-    max-width: 1600px;
+    /* max-width: 1600px; */
     background-color: white;
   }
 
@@ -85,7 +89,13 @@ header{
   color: black;
 }
 
-.dropdown1{
+/* .dropdown1{
+  display: none;
+} */
+
+
+#drop-toggle,
+.dropCont {
   display: none;
 }
 
@@ -156,7 +166,7 @@ header{
   padding: 50px 30px;
   background-color:var(--arduino);
   border-radius: 20px;
-  border: solid 2px black;;
+  border: solid 2px black;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -344,6 +354,7 @@ main{
   grid-auto-rows: 1fr;
   gap: 10px;
   height: 100vh; 
+  width: 100vw;
 }
 
 .item {
